@@ -1,0 +1,219 @@
+<?xml version="1.0" ?>
+<robot name="propeller_ship" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find propeller_ship_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find propeller_ship_description)/urdf/propeller_ship.trans" />
+<xacro:include filename="$(find propeller_ship_description)/urdf/propeller_ship.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.1268851575705391 0.02883048574318651 0.03780899284894458"/>
+    <mass value="0.7515530114688161"/>
+    <inertia ixx="0.000216" ixy="0.0" ixz="1.9e-05" iyy="0.00067" iyz="0.0" izz="0.000843"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_translucent_matte_white"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8004K13_Stainless_Steel_Mixer_Propeller_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004286442235347229 -1.9669316609307284e-05 -4.6164920580044067e-07"/>
+    <mass value="0.004776348795872422"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.073928 0.00117 -0.031672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/8004K13_Stainless_Steel_Mixer_Propeller_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.073928 0.00117 -0.031672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/8004K13_Stainless_Steel_Mixer_Propeller_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="8004K13_Stainless_Steel_Mixer_Propeller_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004286442235347299 -1.9669316609682852e-05 -4.6164920595309633e-07"/>
+    <mass value="0.004776348795872422"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.073928 -0.05883 -0.031672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/8004K13_Stainless_Steel_Mixer_Propeller_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.073928 -0.05883 -0.031672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/8004K13_Stainless_Steel_Mixer_Propeller_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6331K86_Compact_Round-Face_DC_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.008861257097837374 -0.02999973563046463 -0.010000896618357222"/>
+    <mass value="0.023228846574096088"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.076728 -0.02883 -0.041672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/6331K86_Compact_Round-Face_DC_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.076728 -0.02883 -0.041672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/6331K86_Compact_Round-Face_DC_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="6331K86_Compact_Round-Face_DC_Motor_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.008861257097837374 0.030000264369535408 -0.010000896618357222"/>
+    <mass value="0.023228846574096088"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.076728 -0.02883 -0.041672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/6331K86_Compact_Round-Face_DC_Motor_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.076728 -0.02883 -0.041672"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/6331K86_Compact_Round-Face_DC_Motor_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ship_Edges_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.05482022962221375 0.02985653031576948 0.0004095887075589999"/>
+    <mass value="0.0031606885142955086"/>
+    <inertia ixx="2e-06" ixy="0.0" ixz="0.0" iyy="6e-06" iyz="-0.0" izz="8e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.083759 0.001027 -0.049"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/Ship_Edges_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_translucent_matte_red"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.083759 0.001027 -0.049"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/Ship_Edges_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Ship_Horn_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.015189112513693148 0.0010004236622351906 0.0018909510986915845"/>
+    <mass value="0.002597278996089762"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.144507 -0.02783 -0.025065"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/Ship_Horn_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plastic_translucent_matte_red"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.144507 -0.02783 -0.025065"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/Ship_Horn_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="HornConnection_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.014500100696993201 0.007499785977804877 -0.0014997484363766245"/>
+    <mass value="3.1400000935793656e-05"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.158927 -0.021566 -0.028446"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/HornConnection_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.158927 -0.021566 -0.028446"/>
+    <geometry>
+      <mesh filename="package://propeller_ship_description/meshes/HornConnection_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0028 -0.03 -0.01"/>
+  <parent link="6331K86_Compact_Round-Face_DC_Motor_1"/>
+  <child link="8004K13_Stainless_Steel_Mixer_Propeller_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0028 0.03 -0.01"/>
+  <parent link="6331K86_Compact_Round-Face_DC_Motor_2"/>
+  <child link="8004K13_Stainless_Steel_Mixer_Propeller_2"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid3" type="fixed">
+  <origin rpy="0 0 0" xyz="0.007031 0.029857 -0.007328"/>
+  <parent link="Ship_Edges_1"/>
+  <child link="6331K86_Compact_Round-Face_DC_Motor_1"/>
+</joint>
+
+<joint name="Rigid4" type="fixed">
+  <origin rpy="0 0 0" xyz="0.007031 0.029857 -0.007328"/>
+  <parent link="Ship_Edges_1"/>
+  <child link="6331K86_Compact_Round-Face_DC_Motor_2"/>
+</joint>
+
+<joint name="Rigid7" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.083759 -0.001027 0.049"/>
+  <parent link="base_link"/>
+  <child link="Ship_Edges_1"/>
+</joint>
+
+<joint name="Rigid8" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.144507 0.02783 0.025065"/>
+  <parent link="base_link"/>
+  <child link="Ship_Horn_1"/>
+</joint>
+
+<joint name="Rigid10" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.158927 0.021566 0.028446"/>
+  <parent link="base_link"/>
+  <child link="HornConnection_1"/>
+</joint>
+
+</robot>

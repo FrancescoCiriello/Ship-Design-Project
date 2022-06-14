@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<robot name="propeller_ship" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver_default">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<material name="steel_satin">
+  <color rgba="0.6274509803921569 0.6274509803921569 0.6274509803921569 1.0"/>
+</material>
+<material name="plastic_translucent_matte_white">
+  <color rgba="0.9647058823529412 0.9647058823529412 0.9529411764705882 1.0"/>
+</material>
+<material name="plastic_translucent_matte_red">
+  <color rgba="0.7686274509803922 0.20784313725490197 0.15294117647058825 1.0"/>
+</material>
+
+</robot>
