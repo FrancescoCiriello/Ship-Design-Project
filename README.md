@@ -9,3 +9,6 @@ A collection of files and resources developed for the 2022 run of Design: Making
 
 ## Release history
 First upload June 2022
+
+## Contact
+Dr Francesco Ciriello https://www.kcl.ac.uk/people/francesco-ciriello
